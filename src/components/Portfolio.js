@@ -2,39 +2,74 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 
 // IMPORTANTE:
-// 1. Adicione as imagens (screenshots) dos seus projetos na pasta `src/assets`.
-// 2. Importe cada imagem aqui, como nos exemplos comentados abaixo.
-
-// import meuPrimeiroProjeto from '../assets/meu-primeiro-projeto.png';
-// import outroProjeto from '../assets/outro-projeto.png';
+// 1. Crie e adicione screenshots de cada projeto na pasta `src/assets`.
+// 2. Importe cada imagem aqui (ex: import pi3semestre from '../assets/pi3semestre.png';)
+// 3. Substitua as URLs de placeholder pelas suas imagens importadas.
 
 const projects = [
   {
-    name: "Nome do Projeto 1",
-    description: "Descrição detalhada do que o projeto faz e qual o seu objetivo principal.",
-    technologies: "React, CSS, Node.js",
-    myRole: "Descreva aqui o que você fez especificamente neste projeto (ex: desenvolvi o front-end, criei a base de dados, etc.).",
-    codeLink: "URL_PARA_O_SEU_REPOSITORIO_NO_GITHUB",
-    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=Projeto+1" // Substitua por sua imagem: meuPrimeiroProjeto
+    name: "Projeto Interdisciplinar - 1º Semestre",
+    description: "Este repositório contém os projetos interdisciplinares desenvolvidos durante o terceiro e quarto semestres do curso de Desenvolvimento de Software Multiplataforma.",
+    technologies: "React, Node.js, MySQL, etc.", // <-- Edite com as tecnologias corretas
+    myRole: "Descreva aqui a sua participação específica em cada um dos projetos dentro deste repositório.", // <-- Edite com a sua participação
+    codeLink: "https://github.com/Bragadsss/...", // <-- !! SUBSTITUA PELO LINK CORRETO PARA O REPOSITÓRIO DOS PIs !!
+    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=PI+3/4" // Substitua pela sua imagem
   },
   {
-    name: "Nome do Projeto 2",
-    description: "Descrição detalhada do que o projeto faz e qual o seu objetivo principal.",
-    technologies: "HTML, CSS, JavaScript",
-    myRole: "Descreva aqui o que você fez especificamente neste projeto.",
-    codeLink: "URL_PARA_O_SEU_REPOSITORIO_NO_GITHUB",
-    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=Projeto+2" // Substitua por sua imagem: outroProjeto
+    name: "Projeto Interdisciplinar - 2º Semestre",
+    description: "Descrição do projeto desenvolvido no primeiro semestre do curso.", // <-- Edite a descrição
+    technologies: "HTML, CSS, JavaScript", // <-- Edite com as tecnologias corretas
+    myRole: "Fui responsável pelo desenvolvimento do front-end e pela estrutura inicial do projeto.", // <-- Edite com a sua participação
+    codeLink: "URL_PARA_O_SEU_REPOSITORIO_DO_1_SEMESTRE", // <-- Substitua pelo link do GitHub
+    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=PI+1" // Substitua pela sua imagem
   },
-  // Adicione mais projetos aqui, copiando e colando o bloco de código acima.
+  {
+    name: "Projeto Interdisciplinar - 3º Semestre",
+    description: "Descrição do projeto desenvolvido no segundo semestre do curso.", // <-- Edite a descrição
+    technologies: "Tecnologias usadas aqui", // <-- Edite com as tecnologias corretas
+    myRole: "Sua participação no projeto.", // <-- Edite com a sua participação
+    codeLink: "URL_PARA_O_SEU_REPOSITORIO_DO_2_SEMESTRE", // <-- Substitua pelo link do GitHub
+    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=PI+2" // Substitua pela sua imagem
+  },
+  {
+    name: "Projeto Interdisciplinar - 4º Semestre",
+    description: "Descrição do projeto que está a ser desenvolvido no quinto semestre.", // <-- Edite a descrição
+    technologies: "Tecnologias usadas aqui", // <-- Edite com as tecnologias corretas
+    myRole: "Sua participação no projeto.", // <-- Edite com a sua participação
+    codeLink: "URL_PARA_O_SEU_REPOSITORIO_DO_5_SEMESTRE", // <-- Substitua pelo link do GitHub
+    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=PI+5" // Substitua pela sua imagem
+  },
+  
+  {
+    name: "Projeto Interdisciplinar - 5º Semestre",
+    description: "Descrição do projeto que está a ser desenvolvido no quinto semestre.", // <-- Edite a descrição
+    technologies: "Tecnologias usadas aqui", // <-- Edite com as tecnologias corretas
+    myRole: "Sua participação no projeto.", // <-- Edite com a sua participação
+    codeLink: "URL_PARA_O_SEU_REPOSITORIO_DO_5_SEMESTRE", // <-- Substitua pelo link do GitHub
+    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=PI+5" // Substitua pela sua imagem
+  },
+  {
+    name: "Projeto Interdisciplinar - 6º Semestre",
+    description: "Descrição do projeto que está a ser desenvolvido no quinto semestre.", // <-- Edite a descrição
+    technologies: "Tecnologias usadas aqui", // <-- Edite com as tecnologias corretas
+    myRole: "Sua participação no projeto.", // <-- Edite com a sua participação
+    codeLink: "URL_PARA_O_SEU_REPOSITORIO_DO_5_SEMESTRE", // <-- Substitua pelo link do GitHub
+    screenshot: "https://via.placeholder.com/400x225/A3BE8C/282c34?text=PI+5" // Substitua pela sua imagem
+  },
+  // Pode adicionar mais projetos aqui se necessário
 ];
 
+// O componente ProjectCard já está preparado para que, ao clicar no card, ele abra o codeLink.
+// Para isso, vamos envolvê-lo numa tag <a>.
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h2>Projetos</h2>
+      <h2>Projetos Interdisciplinares (PI)</h2>
       <div className="portfolio-grid">
         {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <a href={project.codeLink} target="_blank" rel="noopener noreferrer" key={index} style={{ textDecoration: 'none' }}>
+            <ProjectCard project={project} />
+          </a>
         ))}
       </div>
     </section>
