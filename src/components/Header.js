@@ -1,13 +1,14 @@
 import React from 'react';
-import profilePic from '../assets/profile-pic.jpg'; // Importe sua foto
+// Certifique-se de que a sua foto está na pasta 'src/assets/' e se chama 'profile-pic.jpg'
+import profilePic from '../assets/profile-pic.jpg'; 
 
 const Header = () => {
   return (
     <header className="main-header">
-      <img src={profilePic} alt="Foto do Aluno" className="profile-pic" />
-      <h1>[Seu Nome Completo]</h1>
-      <p>Desenvolvedor Multiplataforma</p>
-      <a href="[URL_DO_SEU_GITHUB]" target="_blank" rel="noopener noreferrer" className="github-link">
+      <img src={profilePic} alt="Foto de David Braga" className="profile-pic" />
+      <h1>David Braga</h1>
+      <p>Estudante de Desenvolvimento de Software Multiplataforma</p>
+      <a href="https://github.com/bragadsss" target="_blank" rel="noopener noreferrer" className="github-link">
         Meu GitHub
       </a>
     </header>

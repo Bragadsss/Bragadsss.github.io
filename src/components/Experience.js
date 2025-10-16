@@ -1,26 +1,18 @@
 import React from 'react';
 
 const Experience = () => {
-  // Deixe este array vazio se não tiver experiência
   const jobs = [
     {
-      company: "Nome da Empresa Atual",
-      startDate: "Data de Início",
-      endDate: "Presente",
-      role: "Cargo/Função",
-      description: "Descrição detalhada das atividades que você faz."
-    },
-    {
-      company: "Nome da Empresa Anterior",
-      startDate: "Data de Início",
-      endDate: "Data de Desligamento",
-      role: "Cargo/Função",
-      description: "Descrição detalhada das atividades que você fazia."
+      company: "DER-SP – Departamento de Estradas de Rodagem do Estado de São Paulo",
+      startDate: "2022",
+      endDate: "Atual",
+      role: "Assistente de Suporte e Atendimento Multicanal",
+      description: "Atuação no suporte técnico e administrativo, atendimento ao público interno e externo, e auxílio na operação de sistemas corporativos. Responsável por gerar relatórios, manter bases de dados atualizadas e colaborar em projetos de modernização tecnológica."
     }
   ];
 
   if (jobs.length === 0) {
-    return null; // Não renderiza a seção se não houver trabalhos
+    return null;
   }
 
   return (
