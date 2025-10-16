@@ -1,0 +1,220 @@
+/* --- GERAL & VARIÁVEIS DE COR --- */
+:root {
+  --background: #282c34;
+  --text-primary: #E5E9F0;
+  --text-secondary: #D8DEE9;
+  --accent-green: #A3BE8C;
+  --card-background: #333944;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* --- TÍTULOS DE SECÇÃO --- */
+section {
+  margin-top: 60px;
+  text-align: left;
+}
+
+section h2 {
+  color: var(--accent-green);
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* --- HEADER --- */
+.main-header {
+  margin-bottom: 60px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--accent-green);
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  color: var(--text-primary);
+}
+
+.main-header p {
+  color: var(--text-secondary);
+  font-size: 1.2em;
+  margin-top: 8px;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: var(--accent-green);
+  color: var(--background);
+  text-decoration: none;
+  border-radius: 50px; /* Estilo "pill" */
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.github-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(163, 190, 140, 0.3);
+}
+
+/* --- SECÇÃO SOBRE MIM & COMPETÊNCIAS --- */
+.about-content {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  background-color: var(--card-background);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- EXPERIÊNCIA, FORMAÇÃO & CERTIFICADOS --- */
+.job, .course, .certification {
+  background-color: var(--card-background);
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.job:hover, .course:hover, .certification:hover {
+    transform: translateY(-5px);
+}
+
+
+.job h3, .course h4, .certification h4 {
+  margin: 0 0 5px 0;
+  color: var(--accent-green);
+  font-size: 1.3em;
+}
+
+.job-company, .course p, .certification p {
+  margin: 0 0 10px 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.credential-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.credential-link:hover {
+  background-color: var(--accent-green);
+  color: var(--background);
+}
+
+
+/* --- SECÇÃO DE PROJETOS --- */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: var(--card-background);
+  border-radius: 12px;
+  border: 1px solid var(--accent-green);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(163, 190, 140, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  margin: 0 0 10px 0;
+  color: var(--text-primary);
+  font-size: 1.4em;
+}
+
+.project-info p {
+  margin: 5px 0 0 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.project-link:hover {
+  opacity: 0.8;
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  margin-top: 60px;
+  border-top: 1px solid var(--card-background);
+  font-size: 0.9em;
+  color: #aaa;
+}
