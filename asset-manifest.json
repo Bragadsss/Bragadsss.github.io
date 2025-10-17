@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5129bdda.css",
+    "main.js": "/static/js/main.92ac9608.js",
+    "static/media/newage2.jpg": "/static/media/newage2.141c05f2103a96160edc.jpg",
+    "static/media/pi-steam.jpg": "/static/media/pi-steam.35e70fdf09ef9eff4548.jpg",
+    "static/media/newage1.jpg": "/static/media/newage1.bec7f8dfc1fce433492b.jpg",
+    "static/media/newage3.jpg": "/static/media/newage3.7f7bbf8f2af6898c0dff.jpg",
+    "static/media/springtoys3.jpg": "/static/media/springtoys3.841a09e8c3c06615f31c.jpg",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.57d0780e31be98bb21b2.jpg",
+    "static/media/recicle4.jpg": "/static/media/recicle4.2a99deeb33fad5fd8fa3.jpg",
+    "static/media/springtoys2.jpg": "/static/media/springtoys2.51940b96d98f010e083b.jpg",
+    "static/media/recicle3.jpg": "/static/media/recicle3.21e078ef699e794dc30b.jpg",
+    "static/media/recicle2.jpg": "/static/media/recicle2.acb3c5ac86a39977f6f4.jpg",
+    "static/media/springtoys1.jpg": "/static/media/springtoys1.2701045a610d2c365c6a.jpg",
+    "static/media/recicle5.jpg": "/static/media/recicle5.34c067c57c8cd0f45459.jpg",
+    "static/media/conectaong5.jpg": "/static/media/conectaong5.6121bfa33f578a277928.jpg",
+    "static/media/recicle6.jpg": "/static/media/recicle6.f31d8d39f13d73300b35.jpg",
+    "static/media/conectaong1.jpg": "/static/media/conectaong1.0836057a71ef8df2f57d.jpg",
+    "static/media/recicle1.jpg": "/static/media/recicle1.55ea295c4e832e3f42b7.jpg",
+    "static/media/conectaong7.jpg": "/static/media/conectaong7.3e4e4f850e497a2e3268.jpg",
+    "static/media/conectaong8.jpg": "/static/media/conectaong8.f8d0d546f3aa7e69e4f2.jpg",
+    "static/media/conectaong3.jpg": "/static/media/conectaong3.8f3ca8ed9eff5088b2f0.jpg",
+    "static/media/conectaong2.jpg": "/static/media/conectaong2.83f6d34233c7c13d8869.jpg",
+    "static/media/conectaong6.jpg": "/static/media/conectaong6.4d0d50f969b6a0d976bb.jpg",
+    "static/media/conectaong4.jpg": "/static/media/conectaong4.62aff8627ee483d8a4f9.jpg",
+    "index.html": "/index.html",
+    "main.5129bdda.css.map": "/static/css/main.5129bdda.css.map",
+    "main.92ac9608.js.map": "/static/js/main.92ac9608.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5129bdda.css",
+    "static/js/main.92ac9608.js"
+  ]
+}
