@@ -1,13 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.15b7fc4e.css",
-    "main.js": "/static/js/main.2743746d.js",
+    "main.css": "/static/css/main.d29adb14.css",
+    "main.js": "/static/js/main.5324fa2e.js",
+    "static/media/newage2.jpg": "/static/media/newage2.141c05f2103a96160edc.jpg",
+    "static/media/pi-steam.jpg": "/static/media/pi-steam.35e70fdf09ef9eff4548.jpg",
+    "static/media/newage1.jpg": "/static/media/newage1.bec7f8dfc1fce433492b.jpg",
+    "static/media/newage3.jpg": "/static/media/newage3.7f7bbf8f2af6898c0dff.jpg",
+    "static/media/springtoys3.jpg": "/static/media/springtoys3.841a09e8c3c06615f31c.jpg",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.57d0780e31be98bb21b2.jpg",
+    "static/media/springtoys2.jpg": "/static/media/springtoys2.51940b96d98f010e083b.jpg",
+    "static/media/springtoys1.jpg": "/static/media/springtoys1.2701045a610d2c365c6a.jpg",
     "index.html": "/index.html",
-    "main.15b7fc4e.css.map": "/static/css/main.15b7fc4e.css.map",
-    "main.2743746d.js.map": "/static/js/main.2743746d.js.map"
+    "main.d29adb14.css.map": "/static/css/main.d29adb14.css.map",
+    "main.5324fa2e.js.map": "/static/js/main.5324fa2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.15b7fc4e.css",
-    "static/js/main.2743746d.js"
+    "static/css/main.d29adb14.css",
+    "static/js/main.5324fa2e.js"
   ]
 }
