@@ -1,17 +1,23 @@
 import React from 'react';
+import { FolderCode, Monitor, Brush } from 'lucide-react'; // ícones possíveis
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, onClick }) => {
+  // escolha do ícone por tipo de projeto (pode ser manual ou via tecnologia)
+  const Icon = project.technologies.includes("Adobe")
+    ? Brush
+    : project.technologies.includes("HTML")
+    ? Monitor
+    : FolderCode;
+
   return (
-    <div className="project-card">
-      <img src={project.screenshot} alt={`Screenshot do ${project.name}`} className="project-image" />
+    <div className="project-card" onClick={onClick}>
+      <div className="project-icon-container">
+        <Icon size={60} color="#bfe07a" />
+      </div>
       <div className="project-info">
         <h3>{project.name}</h3>
-        <p><strong>Tecnologias:</strong> {project.technologies}</p>
-        <p>{project.description}</p>
-        <p><strong>Minha Participação:</strong> {project.myRole}</p>
-        <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="project-link">
-          Ver Código no GitHub →
-        </a>
+        <p>{project.technologies}</p>
+        <div className="project-card-footer">Ver Detalhes →</div>
       </div>
     </div>
   );
